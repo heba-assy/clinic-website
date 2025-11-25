@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #61857b;
+  --color-secondry: #eef2bf;
+  --color-parag: #5e5f58;
+  --font-Cormorant: "Cormorant", serif;
+}
+
+/* -------------------------------------------------- */
+/* 1) BASE LAYER — Styles for HTML elements (global) */
+/* -------------------------------------------------- */
+@layer base {
+  body {
+    @apply text-[#131008];
+  }
+
+  p {
+    @apply text-gray-500 md:text-xl max-w-[730px];
+  }
+
+  h4 {
+    @apply text-6xl md:text-7xl font-Cormorant font-bold leading-[1.2];
+    word-spacing: -0.5rem;
+  }
+
+  label {
+    @apply block mb-2 font-semibold md:text-lg;
+  }
+
+  select {
+    @apply appearance-none focus:outline-none;
+  }
+
+  select,
+  input {
+    @apply w-full border border-gray-300 rounded-full px-4 py-2 md:text-lg 
+           focus:border-primary focus:ring-2 focus:ring-primary/30 
+           transition-all duration-200;
+  }
+
+  input,
+  option {
+    @apply focus:outline-none;
+  }
+
+  a {
+    @apply cursor-pointer transition-all duration-300;
+  }
+}
+
+/* -------------------------------------------------- */
+/* 2) COMPONENTS LAYER — reusable classes */
+/* -------------------------------------------------- */
+@layer components {
+  .btn {
+    @apply px-6 py-4 rounded-full bg-primary text-white font-semibold 
+           transition-all duration-300 cursor-pointer shadow-sm 
+           hover:bg-[#54756d];
+  }
+
+  .font-cormorant {
+    @apply font-Cormorant;
+  }
+
+  .nav-underline {
+    @apply relative;
+  }
+
+  .nav-underline::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-0.5 bg-primary transform scale-x-0 
+           origin-left transition-transform duration-300 ease-out w-full;
+  }
+
+  .nav-underline:hover::after{
+    @apply scale-x-100;
+  }
+
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* -------------------------------------------------- */
+/* 3) OTHER GLOBAL CSS — not part of Tailwind layers */
+/* -------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Datepicker fixes */
+.react-datepicker-wrapper {
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Hide scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
