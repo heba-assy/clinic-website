@@ -10,7 +10,7 @@ import { ToastContainer } from 'react-toastify';
 function App() {
 
   return (
-    <>
+    <main className="text-[#131008]">
       <Hero/>
       <UniqueValue/>
       <Treatments/>
@@ -28,7 +28,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-    </>
+    </main>
   )
 }
 

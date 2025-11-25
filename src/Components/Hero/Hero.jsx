@@ -3,13 +3,12 @@ import Navbar from "../Navbar/Navbar";
 import profilePhoto1 from "../../assets/imgs/profile-photo-1.jpg";
 import profilePhoto2 from "../../assets/imgs/profile-photo-2.jpg";
 import profilePhoto3 from "../../assets/imgs/profile-photo-3.jpg";
+import Wave from "../SVGs/Wave";
 
 export default function Hero() {
   const bgColor = "#EEF2BF";
   const gridColor = "#E5ECA5";
   const gridSize = 120;
-  const waveFill = "#EAEEBA";
-
   const bgImage = `linear-gradient(${gridColor} 2px, transparent 2px), linear-gradient(90deg, ${gridColor} 2px, transparent 2px) `;
   const bgSize = `${gridSize}px ${gridSize}px`;
 
@@ -70,7 +69,7 @@ export default function Hero() {
             </div>
             {/* Hero Image */}
             <div className="relative hidden md:block w-full h-screen">
-              <img src={heroImg} className="w-full h-full object-cover" alt="Dermatology specialist performing skin treatment" />
+              <img src={heroImg} loading="lazy" className="w-full h-full object-cover" alt="Dermatology specialist performing skin treatment" />
 
               <span className="bg-white/10 backdrop-blur-lg absolute top-20 right-40 py-2 px-6 rounded-full text-[#FFFCF3] overflow-hidden text-lg border-white border">
                 Hair Restoration
@@ -120,17 +119,7 @@ export default function Hero() {
 
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-0 z-0">
-        <svg
-          className="relative block w-full h-[50vh] blur-sm" // هنا الموجة تغطي نص الشاشة + blur
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 900 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.28-168.06-16.15-250.45,2.81C406.2,35.56,325.3,76,250.45,94.56,167.14,114.9,80,109.22,0,92.83V120H1200V95.8C1120,110.49,1043.18,110.16,985.66,92.83Z"
-            fill={waveFill}
-          />
-        </svg>
+        <Wave/>
       </div>
     </section>
   );

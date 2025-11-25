@@ -12,10 +12,6 @@
 /* 1) BASE LAYER — Styles for HTML elements (global) */
 /* -------------------------------------------------- */
 @layer base {
-  body {
-    @apply text-[#131008];
-  }
-
   p {
     @apply text-gray-500 md:text-xl max-w-[730px];
   }

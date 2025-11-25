@@ -79,7 +79,11 @@ export default function Footer() {
   return (
     <>
       <section id="contact" className="relative bg-[#787D54]">
-        <img src={footerImg} className="max-h-120 w-full object-cover" />
+        <img
+          src={footerImg}
+          loading="lazy"
+          className="max-h-120 w-full object-cover"
+        />
         {/* Booking Card */}
         <div className="md:absolute max-w-full md:max-w-[700px] mx-auto md:mx-0 overflow-hidden top-20 left-20 py-10 px-8 bg-white rounded-4xl">
           <div className="space-y-5 mb-10">
@@ -194,49 +198,58 @@ export default function Footer() {
               </div>
 
               {/* Date Picker */}
-              <div className="relative">
-                <label htmlFor="date">Date</label>
-                <DatePicker
-                  id="date"
-                  selected={formik.values.date}
-                  onChange={(val) => formik.setFieldValue("date", val)}
-                  placeholderText="Choose a preferred date"
-                  className="border border-gray-300 rounded-full py-2 text-lg w-full m-0 px-4 focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all duration-200"
-                />
+              <div>
+                <div className="relative">
+                  <label htmlFor="date">Date</label>
+                  <DatePicker
+                    id="date"
+                    selected={formik.values.date}
+                    onChange={(val) => formik.setFieldValue("date", val)}
+                    placeholderText="Choose a preferred date"
+                    className="border border-gray-300 rounded-full py-2 text-lg w-full m-0 px-4 focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all duration-200"
+                    aria-label="Choose appointment date"
 
-                <FontAwesomeIcon
-                  icon={faCalendar}
-                  className="absolute right-0 bottom-3 -translate-x-1/2 md:text-xl text-gray-400 pointer-events-none"
-                />
+                  />
 
+                  <FontAwesomeIcon
+                    icon={faCalendar}
+                    className="absolute top-1/2 translate-y-1/2 right-4 md:text-xl text-gray-400 pointer-events-none"
+                  />
+                </div>
                 {formik.touched.date && formik.errors.date && (
-                  <p className="text-red-500 text-sm">{formik.errors.date}</p>
+                  <p className="text-red-500 text-sm mt-1">
+                    {formik.errors.date}
+                  </p>
                 )}
               </div>
 
               {/* Time Picker */}
-              <div className="relative">
-                <label className="mb-2 font-semibold md:text-lg">Date</label>
-                <DatePicker
-                  id="time"
-                  selected={formik.values.time}
-                  onChange={(val) => formik.setFieldValue("time", val)}
-                  showTimeSelect
-                  showTimeSelectOnly
-                  timeIntervals={15}
-                  timeCaption="Time"
-                  dateFormat="h:mm aa"
-                  placeholderText="Select a time"
-                  className="border border-gray-300 rounded-full py-2 md:text-lg w-full m-0 px-4 focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all duration-200"
-                />
+              <div>
+                <div className="relative">
+                  <label className="mb-2 font-semibold md:text-lg">Date</label>
+                  <DatePicker
+                    id="time"
+                    selected={formik.values.time}
+                    onChange={(val) => formik.setFieldValue("time", val)}
+                    showTimeSelect
+                    showTimeSelectOnly
+                    timeIntervals={15}
+                    timeCaption="Time"
+                    dateFormat="h:mm aa"
+                    placeholderText="Select a time"
+                    className="border border-gray-300 rounded-full py-2 md:text-lg w-full m-0 px-4 focus:border-primary focus:ring-2 focus:ring-primary/30 transition-all duration-200"
+                  />
 
-                <FontAwesomeIcon
-                  icon={faAngleDown}
-                  className="absolute right-0 bottom-3 -translate-x-1/2 md:text-xl text-gray-400 pointer-events-none"
-                />
+                  <FontAwesomeIcon
+                    icon={faAngleDown}
+                    className="absolute top-1/2 right-4 translate-y-1/2 md:text-xl text-gray-400 pointer-events-none"
+                  />
+                </div>
 
                 {formik.touched.time && formik.errors.time && (
-                  <p className="text-red-500 text-sm">{formik.errors.time}</p>
+                  <p className="text-red-500 text-sm mt-1">
+                    {formik.errors.time}
+                  </p>
                 )}
               </div>
             </div>
@@ -250,7 +263,11 @@ export default function Footer() {
 
         <div className="container py-14">
           <div className="hidden md:flex items-center gap-2 mb-8 justify-end  text-white">
-            <img src={logo} alt="Licensed skincare clinic interior"/>
+            <img
+              src={logo}
+              loading="lazy"
+              alt="Licensed skincare clinic interior"
+            />
           </div>
 
           <div className="flex flex-col md:flex-row justify-between mt-15 md:0 space-y-8 md:space-y-0">
@@ -338,7 +355,7 @@ export default function Footer() {
                   34582 shawkat, Gleem, Alexandria
                 </p>
               </div>
-              
+
               <div>
                 <h5 className="text-2xl font-Cormorant text-white font-bold mb-5">
                   Email

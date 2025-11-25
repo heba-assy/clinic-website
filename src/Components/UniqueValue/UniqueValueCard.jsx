@@ -1,7 +1,8 @@
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { memo } from "react";
 
-export default function UniqueValueCard({ cardTitle, cardParagraph }) {
+function UniqueValueCard({ cardTitle, cardParagraph }) {
   return (
     <>
       <div className="rounded-4xl p-5 border flex flex-col justify-between border-gray-300 w-full h-85 shadow-sm">
@@ -17,3 +18,5 @@ export default function UniqueValueCard({ cardTitle, cardParagraph }) {
     </>
   );
 }
+
+export default memo(UniqueValueCard);

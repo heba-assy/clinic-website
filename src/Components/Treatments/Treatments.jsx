@@ -50,7 +50,7 @@ export default function Treatments() {
               img={card.img}
               imgAlt={card.imgAlt}
               cardTitle={card.title}
-              describtion={card.description}
+              description={card.description}
               link={card.link}
             />
           ))}
