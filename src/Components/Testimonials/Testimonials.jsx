@@ -27,7 +27,7 @@ export default function Testimonials() {
                 Every glow tells a story-discover the
                 <br /> difference expert care can make.
               </p>
-              <div className="flex gap-3 mt-10 mb-14">
+              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3 mt-10 mb-14">
                 <a href="#contact" className="btn">
                   Book a consultation
                 </a>
