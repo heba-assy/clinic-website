@@ -76,7 +76,7 @@ export default function Hero() {
               <img
                 src="/Hero.webp"
                 fetchPriority="high"
-                loading="eager"
+                 loading="eager"
                 className="w-full h-full object-cover"
                 alt="Dermatology specialist performing skin treatment"
               />

@@ -44,6 +44,7 @@ export default function UniqueValue() {
 
             <img
               src={UniqueValueImg}
+              loading="lazy"
               className="w-80 h-100 rounded-[999px] object-cover"
               alt="Hydrafacial deep cleansing treatment"
             />
