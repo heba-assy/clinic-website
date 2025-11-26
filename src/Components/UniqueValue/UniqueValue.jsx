@@ -2,10 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import UniqueValueImg from "../../assets/imgs/uniqueValueImg.jpg";
 import UniqueValueCard from "./UniqueValueCard";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import serumImg from "../../assets/imgs/serum.jpg";
-import skinCare1 from "../../assets/imgs/skinCare1.jpg";
-import skinCare2 from "../../assets/imgs/skinCare2.jpg";
-import skinCare3 from "../../assets/imgs/skinCare3.jpg";
+import serumImg from "../../assets/imgs/serum.webp";
+import skinCare1 from "../../assets/imgs/skinCare1.webp";
+import skinCare2 from "../../assets/imgs/skinCare2.webp";
+import skinCare3 from "../../assets/imgs/skinCare3.webp";
 import { faFaceSmileBeam } from "@fortawesome/free-regular-svg-icons";
 
 export default function UniqueValue() {

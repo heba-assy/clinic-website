@@ -1,8 +1,8 @@
-import heroImg from "../../assets/imgs/Hero.png";
+import heroImg from "../../assets/imgs/Hero.webp";
 import Navbar from "../Navbar/Navbar";
-import profilePhoto1 from "../../assets/imgs/profile-photo-1.jpg";
-import profilePhoto2 from "../../assets/imgs/profile-photo-2.jpg";
-import profilePhoto3 from "../../assets/imgs/profile-photo-3.jpg";
+import profilePhoto1 from "../../assets/imgs/profile-photo-1.webp";
+import profilePhoto2 from "../../assets/imgs/profile-photo-2.webp";
+import profilePhoto3 from "../../assets/imgs/profile-photo-3.webp";
 import Wave from "../SVGs/Wave";
 
 export default function Hero() {

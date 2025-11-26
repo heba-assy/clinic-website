@@ -1,6 +1,6 @@
-import treatment1 from "../../assets/imgs/treatment1.jpg";
-import treatment2 from "../../assets/imgs/treatment2.jpg";
-import treatment3 from "../../assets/imgs/treatment3.jpg";
+import treatment1 from "../../assets/imgs/treatment1.webp";
+import treatment2 from "../../assets/imgs/treatment2.webp";
+import treatment3 from "../../assets/imgs/treatment3.webp";
 import TreatmentCard from "./TreatmentCard";
 
 export default function Treatments() {

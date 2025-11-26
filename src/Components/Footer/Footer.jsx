@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import footerImg from "../../assets/imgs/footer2.jpg";
+import footerImg from "../../assets/imgs/footer2.webp";
 import logo from "../../assets/imgs/logo.png";
 import {
   faFacebook,
