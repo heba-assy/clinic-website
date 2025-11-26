@@ -1,4 +1,3 @@
-import heroImg from "../../assets/imgs/Hero.webp";
 import Navbar from "../Navbar/Navbar";
 import profilePhoto1 from "../../assets/imgs/profile-photo-1.webp";
 import profilePhoto2 from "../../assets/imgs/profile-photo-2.webp";
@@ -53,8 +52,13 @@ export default function Hero() {
               </p>
 
               <div className="flex flex-col md:flex-row mx-auto gap-3 *:text-lg mt-8 w-3/4 md:w-4/4">
-                <a href="#contact" className="btn">Book a Consultation</a>
-                <a href="#unique-value" className="btn bg-white text-[#131008] hover:bg-primary hover:text-white">
+                <a href="#contact" className="btn">
+                  Book a Consultation
+                </a>
+                <a
+                  href="#unique-value"
+                  className="btn bg-white text-[#131008] hover:bg-primary hover:text-white"
+                >
                   Explore Services
                 </a>
               </div>
@@ -69,7 +73,13 @@ export default function Hero() {
             </div>
             {/* Hero Image */}
             <div className="relative hidden md:block w-full h-screen">
-              <img src={heroImg} loading="lazy" className="w-full h-full object-cover" alt="Dermatology specialist performing skin treatment" />
+              <img
+                src="/Hero.webp"
+                fetchPriority="high"
+                loading="eager"
+                className="w-full h-full object-cover"
+                alt="Dermatology specialist performing skin treatment"
+              />
 
               <span className="bg-white/10 backdrop-blur-lg absolute top-20 right-40 py-2 px-6 rounded-full text-[#FFFCF3] overflow-hidden text-lg border-white border">
                 Hair Restoration
@@ -119,7 +129,7 @@ export default function Hero() {
 
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-0 z-0">
-        <Wave/>
+        <Wave />
       </div>
     </section>
   );

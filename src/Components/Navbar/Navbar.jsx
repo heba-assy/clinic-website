@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="py-5">
+      <header className="py-5">
         <div className="container">
           <div className="relative flex items-center justify-between">
             <img src={logo} />
@@ -81,7 +81,7 @@ export default function Navbar() {
             </li>
           </ul>
         </button>
-      </div>
+      </header>
     </>
   );
 }

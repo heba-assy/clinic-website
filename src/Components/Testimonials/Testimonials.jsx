@@ -114,7 +114,7 @@ export default function Testimonials() {
               </div>
             </div>
             {/* Image */}
-            <div className="hidden md:block relative rounded-4xl overflow-hidden max-w-[700px] max-h-[800px]">
+            <div className="hidden md:block relative rounded-4xl overflow-hidden max-w-[700px] max-h-[80phe0px]">
               <img src={testimonialImg} loading="lazy" className="w-full object-cover" alt="Before and after microneedling results showing reduced acne and clearer skin"/>
               <div className="absolute bg-white size-18 rounded-full flex items-center justify-center top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">
                 <svg

@@ -78,7 +78,7 @@ export default function Footer() {
 
   return (
     <>
-      <section id="contact" className="relative bg-[#787D54]">
+      <footer id="contact" className="relative bg-[#787D54]">
         <img
           src={footerImg}
           loading="lazy"
@@ -397,7 +397,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 }
